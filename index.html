@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TidyBloom | Mükemmel Düzen, Şık Yaşam</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Customizing Tailwind configuration for a softer, vanity-appropriate look */
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-rose': '#D8BFD8', /* Light Lavender/Rose */
+                        'secondary-gray': '#F3F4F6',
+                        'accent-gold': '#B8860B',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-secondary-gray font-sans">
+
+    <!-- Header / Navigation -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <div class="text-2xl font-extrabold text-primary-rose tracking-wider">TidyBloom</div>
+            <nav class="hidden md:flex space-x-8 text-gray-600 font-medium">
+                <a href="#urun" class="hover:text-accent-gold transition">Ürün</a>
+                <a href="#avantajlar" class="hover:text-accent-gold transition">Avantajlar</a>
+                <a href="#siparis" class="hover:text-accent-gold transition">Sipariş</a>
+            </nav>
+            <a href="#siparis" class="hidden md:block bg-accent-gold text-white px-5 py-2 rounded-full hover:bg-yellow-700 transition duration-300">Şimdi Keşfet</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="bg-white pt-16 pb-16 md:pt-24 md:pb-24">
+            <div class="container mx-auto px-6 md:flex md:items-center md:justify-between">
+                
+                <!-- Text Content -->
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-5xl md:text-6xl font-extrabold text-gray-900 leading-tight mb-4">
+                        Makyajenizin <span class="text-primary-rose">Dağınıklığına Son</span> Verin.
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-8">
+                        TidyBloom Modüler Çekmece Düzenleyicisi ile her aksesuarı ait olduğu yerde, şık ve düzenli tutun.
+                    </p>
+                    
+                    <!-- Price and CTA -->
+                    <div class="mb-8 p-6 bg-primary-rose/10 rounded-xl border border-primary-rose/30">
+                        <span class="text-3xl font-bold text-gray-800">Sadece ₺549,-</span>
+                        <p class="text-lg text-gray-600 mt-2">Hemen sipariş verin ve düzenli bir yaşam alanına kavuşun.</p>
+                        <a href="#siparis" class="mt-4 inline-block bg-accent-gold text-white text-xl font-semibold py-3 px-10 rounded-full hover:bg-yellow-700 transition duration-300 shadow-lg">
+                            Sepete Ekle & Şimdi Düzenle
+                        </a>
+                    </div>
+
+                    <!-- Trust Badges -->
+                    <div class="flex flex-wrap gap-4 text-sm text-gray-600 mt-6">
+                        <span class="flex items-center"><svg class="w-4 h-4 mr-1 text-primary-rose" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg> Hızlı Kargo</span>
+                        <span class="flex items-center"><svg class="w-4 h-4 mr-1 text-primary-rose" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h10m-7 5h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg> Taksit İmkanı</span>
+                        <span class="flex items-center"><svg class="w-4 h-4 mr-1 text-primary-rose" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 015.618 4.016z"></path></svg> Kolay İade Garantisi</span>
+                    </div>
+                </div>
+
+                <!-- Image Content -->
+                <div class="md:w-1/2 relative">
+                    <img src="https://image.pollinations.ai/prompt/A%20modular%20vanity%20drawer%20organizer%20filled%20with%20makeup%20and%20jewelry,%20minimalist%20and%20elegant%20style,%20bright%20lighting%20and%20soft%20colors?width=1024&height=1024&nologo=true" 
+                         alt="TidyBloom Modüler Çekmece Düzenleyici" 
+                         class="w-full h-auto object-cover rounded-3xl shadow-2xl transform hover:scale-105 transition duration-500">
+                </div>
+            </div>
+        </section>
+        
+        <!-- Features Section (The Problem Solver) -->
+        <section id="urun" class="py-20 bg-secondary-gray">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Neden TidyBloom'u Seçmelisiniz?</h2>
+                <p class="text-xl text-gray-600 mb-12 max-w-3xl mx-auto">
+                    Küçük aksesuarlarınızın arasında kaybolmasına izin vermeyin. TidyBloom, hem işlevsel hem de estetik bir çözümdür.
+                </p>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    
+                    <!-- Feature 1 -->
+                    <div class="p-8 bg-white rounded-xl shadow-lg border-t-4 border-primary-rose hover:shadow-xl transition duration-300">
+                        <div class="text-5xl text-primary-rose mb-4">🧩</div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-3">Modüler Tasarım</h3>
+                        <p class="text-gray-600">İhtiyaçlarınıza göre boyutlandırın. Çekmecenizin her köşesini en verimli şekilde kullanın.</p>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="p-8 bg-white rounded-xl shadow-lg border-t-4 border-accent-gold hover:shadow-xl transition duration-300">
+                        <div class="text-5xl text-accent-gold mb-4">🛡️</div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-3">Dayanıklı Malzeme</h3>
+                        <p class="text-gray-600">Yıllarca deforme olmadan, sağlam ve kaliteli bir düzenleme deneyimi sunar.</p>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="p-8 bg-white rounded-xl shadow-lg border-t-4 border-primary-rose hover:shadow-xl transition duration-300">
+                        <div class="text-5xl text-primary-rose mb-4">✨</div>
+                        <h3 class="text-2xl font-semibold text-gray-900 mb-3">Estetik Çözüm</h3>
+                        <p class="text-gray-600">Göz alıcı tasarımıyla makyaj masanızın bir parçası haline gelir, mekanınıza zarafet katar.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust & Benefits (USPs) Section -->
+        <section id="avantajlar" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">Siparişiniz Güvenle Kapınızda</h2>
+                
+                <div class="flex flex-wrap justify-center gap-8 max-w-5xl mx-auto">
+                    
+                    <!-- Benefit Card 1: Shipping -->
+                    <div class="w-full sm:w-1/3 p-6 text-center border border-gray-200 rounded-lg shadow-md">
+                        <svg class="w-12 h-12 mx-auto mb-3 text-primary-rose" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">🚀 Ultra Hızlı Kargo</h3>
+                        <p class="text-gray-600">Ürününüz en kısa sürede ve güvenli bir şekilde kapınızda.</p>
+                    </div>
+                    
+                    <!-- Benefit Card 2: Installments -->
+                    <div class="w-full sm:w-1/3 p-6 text-center border border-gray-200 rounded-lg shadow-md">
+                        <svg class="w-12 h-12 mx-auto mb-3 text-accent-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8v4m0 8v4m-5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 015.618 4.016z"></path></svg>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">💳 Taksit İmkanı</h3>
+                        <p class="text-gray-600">Bütçenizi zorlamayın. Çeşitli banka taksit seçenekleriyle ödeme yapın.</p>
+                    </div>
+                    
+                    <!-- Benefit Card 3: Returns -->
+                    <div class="w-full sm:w-1/3 p-6 text-center border border-gray-200 rounded-lg shadow-md">
+                        <svg class="w-12 h-12 mx-auto mb-3 text-primary-rose" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">🔄 Kolay İade</h3>
+                        <p class="text-gray-600">Memnun kalmazsanız paranız iade garantisiyle geri alınır.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA / Order Form Placeholder -->
+        <section id="siparis" class="py-20 bg-primary-rose/10 border-t border-primary-rose/30">
+            <div class="container mx-auto px-6 text-center max-w-4xl">
+                <h2 class="text-5xl font-extrabold text-gray-900 mb-4">
+                    Düzenli Bir Hayata İlk Adımı Atın!
+                </h2>
+                <p class="text-2xl text-gray-600 mb-10">
+                    TidyBloom Modüler Düzenleyiciyi Şimdi Sipariş Edin.
+                </p>
+
+                <!-- Mock Order Box -->
+                <div class="bg-white p-10 rounded-2xl shadow-2xl border-4 border-accent-gold">
+                    <div class="flex justify-between items-center mb-6">
+                        <h3 class="text-3xl font-bold text-gray-800">Ürün: Modüler Çekmece Düzenleyici</h3>
+                        <span class="text-4xl font-extrabold text-primary-rose">₺549,-</span>
+                    </div>
+                    
+                    <div class="mb-8 text-left text-gray-700 space-y-2">
+                        <p class="flex justify-between border-b pb-1"><span>Adet:</span> <span class="font-medium">1</span></p>
+                        <p class="flex justify-between border-b pb-1"><span>Kargo:</span> <span class="font-medium text-green-600">Ücretsiz</span></p>
+                        <p class="flex justify-between text-lg font-semibold text-gray-900 pt-2"><span>Toplam:</span> <span>₺549,-</span></p>
+                    </div>
+
+                    <button class="w-full bg-accent-gold text-white text-2xl font-bold py-4 rounded-xl hover:bg-yellow-700 transition duration-300 shadow-xl uppercase tracking-wider">
+                        Hemen Alışverişe Başla
+                    </button>
+                    <p class="mt-4 text-sm text-gray-500">Ödeme güvenlidir. Tüm bilgileriniz gizli tutulur.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto text-center px-6">
+            <p class="text-xl font-bold mb-3 text-primary-rose">TidyBloom</p>
+            <p class="text-gray-400 text-sm">&copy; 2024 TidyBloom. Tüm hakları saklıdır. | Türkiye Pazarı</p>
+        </div>
+    </footer>
+</body>
+</html>
